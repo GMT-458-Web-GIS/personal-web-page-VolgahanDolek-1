@@ -1,5 +1,16 @@
 body {
     margin: 0;
-    background: rgb(2, 106, 167);
+    background: rgb(133, 197, 206);
     text-align: center;
+}
+h1{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+p{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+
 }
