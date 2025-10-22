@@ -1,16 +1,31 @@
 body {
     margin: 0;
-    background: rgb(133, 197, 206);
+    background: linear-gradient(rgb(98, 206, 248), rgb(31, 72, 184));
     text-align: center;
 }
 h1{
     font-family: "consolas", sans-serif;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 80px;
+
+    animation: mySlide;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
 }
 p{
     font-family: "consolas", sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
 
+    animation: mySlide;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+
+}
+
+@keyframes mySlide{
+    from{margin-top: 100%;}
+    to{margin-top: 0%;}
 }
