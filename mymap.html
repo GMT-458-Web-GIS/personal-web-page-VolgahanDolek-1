@@ -44,17 +44,17 @@
                 features: [
                     new ol.Feature({
                         geometry: new ol.geom.Point(
-                            ol.proj.fromLonLat({32.837869: 39.888576})
+                            ol.proj.fromLonLat([32.837869: 39.888576])
                         )
                     })
                 ],
-            })
-            ,style: new ol.sytle.Style(
-                image, new ol.style.Icon({
-                    src: '/personal-web-page-VolgahanDolek-1/marker-icon.png',
+            }),
+            style: new ol.sytle.Style({
+                image: new ol.style.Icon({
+                    src: 'https://docs.maptiler.com/openlayers/examples/default-marker/marker-icon.png',
                     anchor: [0.5, 1]
                 })
-            )
+        })
         })
 
         map.addLayer(marker)
