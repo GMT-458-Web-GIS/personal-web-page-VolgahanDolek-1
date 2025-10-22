@@ -27,7 +27,7 @@
             layers: [
                 new ol.layer.Tile({
                     source: new ol.source.TileJSON({
-                        url:'https://api.maptiler.com/maps/basic-v2/tiles.json?key=aJz86FDXNzIIfQPYWCaC',
+                        url:'https://api.maptiler.com/maps/base-v4/tiles.json?key=aJz86FDXNzIIfQPYWCaC',
                         tileSize: 512,
                     })
                 })
@@ -35,7 +35,7 @@
             target: 'map',
             view: new ol.View({
                 center: ol.proj.fromLonLat([32.837869, 39.888576]),
-                zoom: 8
+                zoom: 14
             })
         });
 
