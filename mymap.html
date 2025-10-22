@@ -39,25 +39,19 @@
             })
         });
 
-        const marker = new ol.layer.Vector({
-            source: new ol.source.Vector({
-                features: [
-                    new ol.Feature({
-                        geometry: new ol.geom.Point(
-                            ol.proj.fromLonLat([32.837869, 39.888576])
-                        )
-                    })
-                ],
-            }),
-            style: new ol.style.Style({
-                image: new ol.Style.Icon({
-                    src: 'https://docs.maptiler.com/openlayers/examples/default-marker/marker-icon.png',
-                    anchor: [0.5, 1]
-                })
-            })
+        var markers = new ol.layer.Vector({
+      source: new ol.source.Vector(),
+      style: new ol.style.Style({
+        image: new ol.style.Icon({
+          anchor: [0.5, 1],
+          src: 'marker-icon.png'
         })
-
-        map.addLayer(marker)
+      })
+    });
+    map.addLayer(markers);
+    
+    var marker = new ol.Feature(new ol.geom.Point(ol.proj.fromLonLat([32.837869, 39.888576])));
+    markers.getSource().addFeature(marker);
 
      </script>
 </body>
