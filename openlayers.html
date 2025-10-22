@@ -20,7 +20,11 @@
 </head>
 <body>
     <div id="map"></div>
-    const key = 'YOUR_MAPTILER_API_KEY_HERE';
+  
+
+</body>
+<script>
+  const key = 'YOUR_MAPTILER_API_KEY_HERE';
 const source = new ol.source.TileJSON({
   url: `https://api.maptiler.com/maps/streets-v2/tiles.json?key=${key}`,
   tileSize: 512,
@@ -40,9 +44,5 @@ const map = new ol.Map({
     zoom: 14
   })
 });
-
-</body>
-<script>
-
 </script>
 </html>
