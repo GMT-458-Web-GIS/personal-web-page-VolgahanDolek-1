@@ -9,7 +9,7 @@ h1{
     font-size: 80px;
 
     animation: mySlide;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-timing-function: ease-out;
     animation-duration: 1.5s;
 }
@@ -19,7 +19,7 @@ p{
     font-size: 25px;
 
     animation: mySlide;
-    animation-delay: 1s;
+    animation-delay: 0s;
     animation-timing-function: ease-out;
     animation-duration: 1.5s;
 
